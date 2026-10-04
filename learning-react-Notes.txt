@@ -1,0 +1,39 @@
+learning-react (মূল প্রজেক্ট ফোল্ডার)
+│
+├── node_modules        → সব লাইব্রেরি/প্যাকেজ
+├── public              → স্ট্যাটিক ফাইল (favicon, index.html ইত্যাদি)
+├── src                 → আসল কোড
+│   ├── assets          → ছবি/রিসোর্স
+│   ├── App.css         → অ্যাপের CSS স্টাইল
+│   ├── App.jsx         → মূল React কম্পোনেন্ট
+│   ├── index.css       → গ্লোবাল CSS
+│   └── main.jsx        → React অ্যাপ DOM-এ রেন্ডার করার এন্ট্রি
+│
+├── .gitignore          → Git-এ কোন ফাইল যাবে না
+├── eslint.config.js    → কোড লিন্টিং কনফিগারেশন
+├── index.html          → মূল HTML ফাইল
+├── package-lock.json   → ডিপেন্ডেন্সি ভার্সন লক
+├── package.json        → প্রজেক্ট তথ্য ও ডিপেন্ডেন্সি লিস্ট
+├── README.md           → প্রজেক্টের ডকুমেন্টেশন
+└── vite.config.js      → Vite বিল্ড টুল কনফিগারেশন
+
+
+             Browser
+                ↓
+           index.html
+                ↓
+          <div id="root">
+                ↓
+             main.jsx
+                ↓
+            <App />
+                ↓
+             App.jsx
+                ↓
+          React UI তৈরি
+                ↓
+      <div id="root"> এর ভিতরে
+                ↓
+             Browser
+                ↓
+        👤 User UI দেখতে পায়
